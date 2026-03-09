@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>GitHub Issues Tracker</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dashboard-page">
+
+<nav class="navbar">
+
+<div class="nav-left">
+    <h2>
+        <img src="github-logo.png" class="logosize">
+        GitHub Issues Tracker
+    </h2>
+</div>
+
+<div class="nav-right">
+
+        <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search issues...">
+        </div>
+
+        <button id="newIssueBtn">+ New Issue</button>
+
+</div>
+
+</nav>
+
+
+<div class="tab-middle">
+    <div class="tab-container">
+
+    <button id="all" class="tab active">All</button>
+    <button id="open" class="tab">Open</button>
+    <button id="closed" class="tab">Closed</button>
+
+</div>
+
+</div>
+
+
+
+<div class="dashboard">
+
+<div class="issue-header">
+
+
+
+
+<div id="issue-count-container">
+  <img src="Aperture.png" alt="Issue icon">
+  <div>
+    <h3 id="issue-count">0 Issues</h3>
+    <p>Track and manage your project issues</p>
+  </div>
+</div>
+
+
+
+
+<div class="legend">
+
+<img src="Open-Status.png" alt="" class="legend-icon">
+<span>Open</span>
+<img src="Closed- Status .png" alt="" class="legend-icon">
+<span>Closed</span>
+</div>
+
+</div>
+
+
+
+<div id="issue-container"></div>
+
+</div>
+
+
+<div id="modal" class="modal"></div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
